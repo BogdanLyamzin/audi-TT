@@ -1,0 +1,66 @@
+.footer{
+    background-image: linear-gradient(to bottom, rgba(0,0,0,0.7), rgba(0,0,0,0.7)), url("../img/footer-bg.png");
+    background-size: cover;
+}
+.footer-content{
+    padding: 28px 0;
+    display: grid;
+    grid-template-columns: 1fr 633px;
+}
+.footer-contacts{
+    width: 405px;
+    margin: 0 auto;
+}
+.footer-title{
+    font-family: "Gotham Pro", sans-serif;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 28px;
+    line-height: 27px;
+    text-align: center;
+    color: #FFFFFF;
+    margin-bottom: 45px;
+}
+.footer-contacts-address{
+    font-family: "Gotham Pro", sans-serif;
+    font-size: 17px;
+    line-height: 20px;
+    color: #FFFFFF;
+}
+.footer-contacts-links{
+    display: flex;
+    flex-direction: column;
+    margin-right: 56px;
+}
+.footer-contacts-link{
+    font-family: "Gotham Pro", sans-serif;
+    font-size: 17px;
+    line-height: 20px;
+    color: #FFFFFF;
+    padding-bottom: 37px;
+}
+.footer-contacts-content{
+    display: flex;
+    justify-content: space-between;
+}
+.footer-contacts-information{
+    padding-bottom: 36px;
+}
+.footer-svg{
+    width: 170px;
+    margin: 0 auto;
+
+}
+
+.footer-svg-instagram{
+    background: url("../img/instagram.svg") center/cover no-repeat;
+    width: 63px;
+    height: 63px;
+    margin-right: 26px;
+}
+.footer-svg-facebook{
+    background: url("../img/facebook.svg") center/cover no-repeat;
+    width: 63px;
+    height: 63px;
+}
+

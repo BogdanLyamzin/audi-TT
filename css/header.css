@@ -1,0 +1,40 @@
+/*HEADER START*/
+.header{
+    padding-top: 315px;
+    padding-bottom: 200px;
+    background: url("../img/header-bg.png") center/cover no-repeat;
+    background-attachment: fixed;
+}
+
+.header-title{
+    font-weight: bold;
+    font-size: 90px;
+    line-height: 95px;
+    font-family: "Gotham Pro", sans-serif;
+    color: #fff;
+    margin-bottom: 35px;
+    max-width: 680px;
+}
+
+.header-info{
+    font-weight: 300;
+    font-size: 19px;
+    line-height: 22px;
+    font-family: "Gotham Pro", sans-serif;
+    color: #fff;
+    margin-bottom: 33px;
+    max-width: 584px;
+}
+
+.header-btn{
+    font-size: 29px;
+    font-weight: 500;
+    font-family: "Gotham Pro", sans-serif;
+    color: #fff;
+    text-decoration: none;
+    display: inline-block;
+    border: 2px solid #fff;
+    padding: 19px 23px;
+    border-radius: 12px;
+}
+/*HEADER END*/

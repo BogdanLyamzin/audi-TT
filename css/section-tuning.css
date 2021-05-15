@@ -1,0 +1,126 @@
+/*SECTION TUNING START*/
+.tuning {
+    background: url("../img/tuning-bg.png") no-repeat left top, #000;
+    background-size: 50% 100%;
+    padding-top: 121px;
+    padding-bottom: 653px;
+    position: relative;
+}
+.tuning-content{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+
+}
+.tuning-column {
+    text-align: center;
+}
+
+.tuning-column._left {
+    padding-right: 166px;
+}
+
+.tuning-column._right {
+    padding-left: 123px;
+}
+
+.tuning-column-title {
+    text-align: center;
+    font-family: "Gotham Pro", sans-serif;
+    font-weight: 700;
+    text-transform: uppercase;
+    font-size: 50px;
+    color: #fff;
+    margin-bottom: 94px;
+}
+
+.tuning-column-subtitle {
+    text-align: center;
+    font-size: 36px;
+    font-weight: 500;
+    font-family: "Gotham Pro", sans-serif;
+    color: #fff;
+    line-height: 34px;
+    position: relative;
+}
+
+.tuning-column-subtitle._left{
+    margin-bottom: 113px;
+}
+
+.tuning-column-subtitle._right{
+    margin-bottom: 83px;
+}
+
+.tuning-column-subtitle::after{
+    content: "";
+    height: 2px;
+    background-color: #B80000;
+    left:50%;
+    bottom: -14px;
+    transform: translateX(-50%);
+    position: absolute;
+}
+
+.tuning-column-subtitle._left::after {
+    width: 248px;
+}
+
+.tuning-column-subtitle._right::after {
+    width: 152px;
+}
+
+.tuning-column-text{
+    font-size: 17px;
+    color: #fff;
+    font-family: "Gotham Pro", sans-serif;
+    font-weight: 300;
+    line-height: 20px;
+    text-align: left;
+}
+
+.tuning-slider{
+    max-width: 472px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.tuning-slider-content {
+    width: 372px;
+}
+
+.tuning-slider-arrow{
+    cursor: pointer;
+}
+
+.tuning-slider-item{
+    background: #2E2E2E;
+    height: 299px;
+    padding: 0 36px;
+    box-sizing: border-box;
+    position: relative;
+    text-align: center;
+}
+
+.tuning-slider-icon{
+    position: relative;
+    top: -29px;
+}
+
+.tuning-slider-title{
+    font-family: "Gotham Pro", sans-serif;
+    font-size: 20px;
+    text-transform: capitalize;
+    color: #fff;
+    margin-bottom: 31px;
+}
+
+.tuning-slider-text{
+    font-size: 17px;
+    font-weight: 300;
+    line-height: 23px;
+    font-family: "Gotham Pro", sans-serif;
+    text-align: center;
+    color: #fff;
+}
+/*SECTION TUNING END*/

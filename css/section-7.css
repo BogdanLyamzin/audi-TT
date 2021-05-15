@@ -1,0 +1,62 @@
+.join {
+height: 296px;
+}
+
+.join-content {
+    display: grid;
+    grid-template-columns: 1fr 633px;
+    height: 100%;
+}
+
+.join-column-call {
+    background-color: #000;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.join-column-title {
+    font-family: "Gotham Pro", sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 36px;
+    line-height: 20px;
+    color: #fff;
+    margin-bottom: 82px;
+}
+
+.join-btn {
+    text-decoration: none;
+    font-family: "Gotham Pro", sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 19px;
+    line-height: 23px;
+    text-align: center;
+    color: #000;
+    background-color: #fff;
+    border-radius: 10px;
+    padding: 15px 37px;
+
+}
+.join-column-gallery{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    width: 633px;
+}
+.join-column-item {
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 100%;
+}
+.join-column-item:nth-child(1){
+    background-image: url("../img/join1.png");
+}
+.join-column-item:nth-child(2){
+    background-image: url("../img/join2.png");
+}
+.join-column-item:nth-child(3){
+    background-image: url("../img/join3.png");
+}
+
