@@ -1,0 +1,210 @@
+.form-progress-bar {
+    max-width: 435px;
+    margin-bottom: 55px;
+    display: flex;
+    justify-content: center;
+}
+
+.progress-bar-step {
+    width: 21px;
+    height: 21px;
+    border-radius: 50%;
+    background-color: #ffffff;
+    margin-right: 53px;
+}
+
+.progress-bar-step:last-child {
+    margin-right: 0;
+}
+
+.progress-bar-step::after{
+    content: "";
+    display: inline-block;
+    width: 53px;
+    height: 4px;
+    background-color: #fff;
+    position: relative;
+    left: 21px;
+}
+
+.progress-bar-step:last-child::after {
+    display: none;
+}
+
+.progress-bar-step.active {
+    background-color: #FF0000;
+}
+
+.progress-bar-step.active::after {
+    background-color: #FF0000;
+}
+
+.progress-bar-step.done {
+    background-color: #FF0000;
+}
+
+.progress-bar-step.done::after {
+    background-color: #FF0000;
+}
+
+.label-text{
+    font-family: "Gotham Pro", sans-serif;
+    font-weight: 300;
+    font-size: 17px;
+    color: #fff;
+    margin-bottom: 9px;
+    display: block;
+}
+
+.form-group {
+    margin-bottom: 25px;
+}
+
+.form-control {
+    height: 39px;
+    box-sizing: border-box;
+    background: transparent;
+    border-radius: 5px;
+    border: 1px solid #C4C4C4;
+    font-family: "Gotham Pro", sans-serif;
+    font-weight: 300;
+    font-size: 17px;
+    color: #fff;
+    outline: none;
+    padding: 12px 15px 12px 20px;
+}
+
+.form-control.text {
+    width: 221px;
+}
+
+.form-control.email {
+    width: 284px;
+}
+
+.form-control.phone {
+    width: 284px;
+}
+
+.form-control-textarea {
+    height: 126px;
+    box-sizing: border-box;
+    background: transparent;
+    border-radius: 5px;
+    border: 1px solid #C4C4C4;
+    font-family: "Gotham Pro", sans-serif;
+    font-weight: 300;
+    font-size: 17px;
+    color: #fff;
+    outline: none;
+    padding: 12px 15px 12px 20px;
+}
+
+.custom-select {
+    position: relative;
+    width: 263px;
+    display: inline-block;
+}
+
+.custom-select-selected {
+    height: 39px;
+    width: 263px;
+    padding: 12px 48px 12px 20px;
+    box-sizing: border-box;
+    background: transparent;
+    border: 1px solid #C4C4C4;
+    border-radius: 5px;
+    font-family: "Gotham Pro", sans-serif;
+    font-weight: 300;
+    font-size: 17px;
+    color: #fff;
+    outline: none;
+    position: relative;
+    cursor: pointer;
+    user-select: none;
+}
+
+.custom-select-selected::after {
+    position: absolute;
+    content: "";
+    background: url("../img/custom-select-arrow.png") no-repeat;
+    width: 23px;
+    height: 9px;
+    top: 16px;
+    right: 15px;
+}
+
+.custom-select-selected.open::after {
+    transform: rotate(180deg);
+}
+
+.custom-select-items {
+    position: absolute;
+}
+
+.custom-select-option {
+    height: 39px;
+    width: 263px;
+    padding: 12px 48px 12px 20px;
+    box-sizing: border-box;
+    background: transparent;
+    border: 1px solid #C4C4C4;
+    border-top: none;
+    font-family: "Gotham Pro", sans-serif;
+    font-weight: 300;
+    font-size: 17px;
+    color: #fff;
+    cursor: pointer;
+    user-select: none;
+}
+
+.form-btn{
+    text-decoration: none;
+    font-family: "Gotham Pro", sans-serif;
+    height: 39px;
+    padding: 8px 25px;
+    box-sizing: border-box;
+    font-size: 19px;
+    text-align: center;
+    color: #000;
+    background-color: #fff;
+    border-radius: 5px;
+    outline: none;
+    margin-left: 45px;
+}
+
+.success-message {
+    width: 425px;
+    margin-top: 50px;
+    text-align: center;
+}
+
+.success-message-icon {
+    margin: 0 auto 17px;
+    width: 76px;
+    height: 76px;
+    box-sizing: border-box;
+    border: 6px solid #fff;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.success-message-title {
+    font-family: "Gotham Pro", sans-serif;
+    text-align: center;
+    font-size: 45px;
+    color: #fff;
+    margin-bottom: 10px;
+}
+
+.success-message-text {
+    max-width: 263px;
+    margin: 0 auto;
+    font-family: "Gotham Pro", sans-serif;
+    font-weight: 300;
+    font-size: 25px;
+    text-align: center;
+    color: #fff;
+}

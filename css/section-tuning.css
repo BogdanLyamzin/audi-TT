@@ -78,22 +78,33 @@
     text-align: left;
 }
 
-.tuning-slider{
+.tuning-slider {
     max-width: 472px;
     display: flex;
     align-items: center;
     justify-content: space-between;
 }
 
-.tuning-slider-content {
-    width: 372px;
-}
-
 .tuning-slider-arrow{
     cursor: pointer;
+    position: relative;
+    top: 15px;
+}
+
+.tuning-slider-content {
+    width: 372px;
+    padding-top: 29px;
+    overflow: hidden;
+}
+
+.tuning-slides {
+    width: 300%;
+    transition: transform 0.8s ease;
+    display: flex;
 }
 
 .tuning-slider-item{
+    flex: 0 0 372px;
     background: #2E2E2E;
     height: 299px;
     padding: 0 36px;

@@ -6,7 +6,8 @@
 @import "section-why-us.css";
 @import "section-faq.css";
 @import "section 4.css";
-@import "section-5.css";
+@import "cost.css";
+@import "form.css";
 @import "section-6.css";
 @import "section-7.css";
 @import "footer.css";
@@ -22,6 +23,9 @@ img {
     height: auto;
 }
 
+.hide {
+    display: none;
+}
 
 
 

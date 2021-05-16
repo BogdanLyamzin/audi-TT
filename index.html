@@ -15,13 +15,13 @@
 
         <ul class="navbar-nav">
             <li class="navbar-nav-item">
-                <a href="#why-us" class="navbar-nav-link">почему мы</a>
+                <a href="#why-us" class="navbar-nav-link" data-toggle="scroll-to" data-target="#why-us">почему мы</a>
             </li>
             <li class="navbar-nav-item">
-                <a href="#cost" class="navbar-nav-link">стоимость</a>
+                <a href="#cost" class="navbar-nav-link" data-toggle="scroll-to" data-target="#cost">стоимость</a>
             </li>
             <li class="navbar-nav-item">
-                <a href="#map" class="navbar-nav-link">локация</a>
+                <a href="#map" class="navbar-nav-link" data-toggle="scroll-to" data-target="#map">локация</a>
             </li>
         </ul>
 
@@ -43,7 +43,7 @@
     <div class="container">
         <h1 class="header-title">Чип-тюнинг для любой ТТ</h1>
         <p class="header-info">Разработка Audi TT началась в сентябре 1994 года в Audi Design Center в Калифорнии. Адаптация под ранее не использовавшуюся бесшовную лазерную сварку для 1-го поколения ТТ задержала выпуск автомобиля.</p>
-        <a href="#tuning" class="header-btn">подробнее</a>
+        <a href="#tuning" class="header-btn"  data-toggle="scroll-to" data-target="#tuning">подробнее</a>
     </div>
 </header>
 <!--HEADER END-->
@@ -68,17 +68,29 @@
                 <p class="tuning-column-subtitle _right">Наши услуги</p>
 
                 <div class="tuning-slider">
-                    <span class="tuning-slider-arrow"><img src="img/arrow-left.png" alt="slider-arrow"></span>
+                    <span class="tuning-slider-arrow" data-modal="slide" data-target="prev"><img src="img/arrow-left.png" alt="slider-arrow"></span>
 
                     <div class="tuning-slider-content">
-                        <div class="tuning-slider-item">
-                            <img src="img/tuning-column-slider.svg" alt="tuning" class="tuning-slider-icon">
-                            <h5 class="tuning-slider-title">Чип-тюнниг двигателя</h5>
-                            <p class="tuning-slider-text">Услуга позволяет в несколько раз улучшить тех. характеристики Вашего авто и сделать его более привлекательным</p>
+                        <div class="tuning-slides">
+                            <div class="tuning-slider-item">
+                                <img src="img/tuning-column-slider.svg" alt="tuning" class="tuning-slider-icon">
+                                <h5 class="tuning-slider-title">Чип-тюнниг двигателя</h5>
+                                <p class="tuning-slider-text">Услуга позволяет в несколько раз улучшить тех. характеристики Вашего авто и сделать его более привлекательным</p>
+                            </div>
+                            <div class="tuning-slider-item">
+                                <img src="img/tuning-column-slider.svg" alt="tuning" class="tuning-slider-icon">
+                                <h5 class="tuning-slider-title">Чип-тюнниг двигателя</h5>
+                                <p class="tuning-slider-text">Услуга позволяет в несколько раз улучшить тех. характеристики Вашего авто и сделать его более привлекательным</p>
+                            </div>
+                            <div class="tuning-slider-item">
+                                <img src="img/tuning-column-slider.svg" alt="tuning" class="tuning-slider-icon">
+                                <h5 class="tuning-slider-title">Чип-тюнниг двигателя</h5>
+                                <p class="tuning-slider-text">Услуга позволяет в несколько раз улучшить тех. характеристики Вашего авто и сделать его более привлекательным</p>
+                            </div>
                         </div>
                     </div>
 
-                    <span class="tuning-slider-arrow"><img src="img/arrow-right.png" alt="slider-arrow"></span>
+                    <span class="tuning-slider-arrow" data-modal="slide" data-target="next"><img src="img/arrow-right.png" alt="slider-arrow"></span>
                 </div>
             </div>
         </div>
@@ -154,66 +166,188 @@
             <div class="general-info-container">
                 <h3 class="general-information-title">Кейсы</h3>
                 <div class="case-slider">
-                    <span class="case-slider-arrow _left"><img src="img/arrow-left.png" alt="arrow"></span>
-                    <div class="case-slider-item">
-                        <div class="case-slider-item-container">
-                            <img src="img/general-slider.svg" alt="general" class="case-slider-img">
-                            <p class="case-slider-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
-                                tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.</p>
+                    <span class="case-slider-arrow _left" data-modal="slide" data-target="prev"><img src="img/arrow-left.png" alt="arrow"></span>
+
+                    <div class="case-slider-content">
+                        <div class="case-slides">
+                            <div class="case-slider-item">
+                                <div class="case-slider-item-container">
+                                    <img src="img/general-slider.svg" alt="general" class="case-slider-img">
+                                    <p class="case-slider-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+                                        tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.</p>
+                                </div>
+                                <h5 class="case-slider-additional-info-title">Расход топлива</h5>
+                                <ul class="case-slider-additional-info-item">
+                                    <li class="case-slider-additional-info-characteristic before">
+                                        <div class="case-slider-additional-info-left-column">до</div>
+                                        <div class="case-slider-additional-info-right-column">
+                                            <div class="characteristic-value-before" style="width: 150px">
+                                                <span class="characteristic-number">150</span>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li class="case-slider-additional-info-characteristic after">
+                                        <div class="case-slider-additional-info-left-column-orange">после</div>
+                                        <div class="case-slider-additional-info-right-column">
+                                            <div class="characteristic-value-after" style="width: 200px">
+                                                <span class="characteristic-number-orange">200</span>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li class="case-slider-additional-info-characteristic before">
+                                        <div class="case-slider-additional-info-left-column">до</div>
+                                        <div class="case-slider-additional-info-right-column">
+                                            <div class="characteristic-value-before" style="width: 200px">
+                                                <span class="characteristic-number">200</span>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li class="case-slider-additional-info-characteristic after">
+                                        <div class="case-slider-additional-info-left-column-orange">после</div>
+                                        <div class="case-slider-additional-info-right-column">
+                                            <div class="characteristic-value-after" style="width: 300px">
+                                                <span class="characteristic-number-orange">300</span>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li class="case-slider-additional-info-characteristic before">
+                                        <div class="case-slider-additional-info-left-column">до</div>
+                                        <div class="case-slider-additional-info-right-column">
+                                            <div class="characteristic-value-before" style="width: 200px">
+                                                <span class="characteristic-number">200</span>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li class="case-slider-additional-info-characteristic after">
+                                        <div class="case-slider-additional-info-left-column-orange">после</div>
+                                        <div class="case-slider-additional-info-right-column">
+                                            <div class="characteristic-value-after" style="width: 250px">
+                                                <span class="characteristic-number-orange">250</span>
+                                            </div>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="case-slider-item">
+                                <div class="case-slider-item-container">
+                                    <img src="img/general-slider.svg" alt="general" class="case-slider-img">
+                                    <p class="case-slider-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+                                        tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.</p>
+                                </div>
+                                <h5 class="case-slider-additional-info-title">Расход топлива</h5>
+                                <ul class="case-slider-additional-info-item">
+                                    <li class="case-slider-additional-info-characteristic before">
+                                        <div class="case-slider-additional-info-left-column">до</div>
+                                        <div class="case-slider-additional-info-right-column">
+                                            <div class="characteristic-value-before" style="width: 150px">
+                                                <span class="characteristic-number">150</span>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li class="case-slider-additional-info-characteristic after">
+                                        <div class="case-slider-additional-info-left-column-orange">после</div>
+                                        <div class="case-slider-additional-info-right-column">
+                                            <div class="characteristic-value-after" style="width: 200px">
+                                                <span class="characteristic-number-orange">200</span>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li class="case-slider-additional-info-characteristic before">
+                                        <div class="case-slider-additional-info-left-column">до</div>
+                                        <div class="case-slider-additional-info-right-column">
+                                            <div class="characteristic-value-before" style="width: 200px">
+                                                <span class="characteristic-number">200</span>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li class="case-slider-additional-info-characteristic after">
+                                        <div class="case-slider-additional-info-left-column-orange">после</div>
+                                        <div class="case-slider-additional-info-right-column">
+                                            <div class="characteristic-value-after" style="width: 300px">
+                                                <span class="characteristic-number-orange">300</span>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li class="case-slider-additional-info-characteristic before">
+                                        <div class="case-slider-additional-info-left-column">до</div>
+                                        <div class="case-slider-additional-info-right-column">
+                                            <div class="characteristic-value-before" style="width: 200px">
+                                                <span class="characteristic-number">200</span>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li class="case-slider-additional-info-characteristic after">
+                                        <div class="case-slider-additional-info-left-column-orange">после</div>
+                                        <div class="case-slider-additional-info-right-column">
+                                            <div class="characteristic-value-after" style="width: 250px">
+                                                <span class="characteristic-number-orange">250</span>
+                                            </div>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="case-slider-item">
+                                <div class="case-slider-item-container">
+                                    <img src="img/general-slider.svg" alt="general" class="case-slider-img">
+                                    <p class="case-slider-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+                                        tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.</p>
+                                </div>
+                                <h5 class="case-slider-additional-info-title">Расход топлива</h5>
+                                <ul class="case-slider-additional-info-item">
+                                    <li class="case-slider-additional-info-characteristic before">
+                                        <div class="case-slider-additional-info-left-column">до</div>
+                                        <div class="case-slider-additional-info-right-column">
+                                            <div class="characteristic-value-before" style="width: 150px">
+                                                <span class="characteristic-number">150</span>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li class="case-slider-additional-info-characteristic after">
+                                        <div class="case-slider-additional-info-left-column-orange">после</div>
+                                        <div class="case-slider-additional-info-right-column">
+                                            <div class="characteristic-value-after" style="width: 200px">
+                                                <span class="characteristic-number-orange">200</span>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li class="case-slider-additional-info-characteristic before">
+                                        <div class="case-slider-additional-info-left-column">до</div>
+                                        <div class="case-slider-additional-info-right-column">
+                                            <div class="characteristic-value-before" style="width: 200px">
+                                                <span class="characteristic-number">200</span>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li class="case-slider-additional-info-characteristic after">
+                                        <div class="case-slider-additional-info-left-column-orange">после</div>
+                                        <div class="case-slider-additional-info-right-column">
+                                            <div class="characteristic-value-after" style="width: 300px">
+                                                <span class="characteristic-number-orange">300</span>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li class="case-slider-additional-info-characteristic before">
+                                        <div class="case-slider-additional-info-left-column">до</div>
+                                        <div class="case-slider-additional-info-right-column">
+                                            <div class="characteristic-value-before" style="width: 200px">
+                                                <span class="characteristic-number">200</span>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li class="case-slider-additional-info-characteristic after">
+                                        <div class="case-slider-additional-info-left-column-orange">после</div>
+                                        <div class="case-slider-additional-info-right-column">
+                                            <div class="characteristic-value-after" style="width: 250px">
+                                                <span class="characteristic-number-orange">250</span>
+                                            </div>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
                         </div>
-                        <h5 class="case-slider-additional-info-title">Расход топлива</h5>
-                        <ul class="case-slider-additional-info-item">
-                            <li class="case-slider-additional-info-characteristic before">
-                                <div class="case-slider-additional-info-left-column">до</div>
-                                <div class="case-slider-additional-info-right-column">
-                                    <div class="characteristic-value-before" style="width: 217px">
-                                        <span class="characteristic-number">150</span>
-                                    </div>
-                                </div>
-                            </li>
-                            <li class="case-slider-additional-info-characteristic after">
-                                <div class="case-slider-additional-info-left-column-orange">после</div>
-                                <div class="case-slider-additional-info-right-column">
-                                    <div class="characteristic-value-after" style="width: 296px">
-                                        <span class="characteristic-number-orange">200</span>
-                                    </div>
-                                </div>
-                            </li>
-                            <li class="case-slider-additional-info-characteristic before">
-                                <div class="case-slider-additional-info-left-column">до</div>
-                                <div class="case-slider-additional-info-right-column">
-                                    <div class="characteristic-value-before" style="width: 305px">
-                                        <span class="characteristic-number">200</span>
-                                    </div>
-                                </div>
-                            </li>
-                            <li class="case-slider-additional-info-characteristic after">
-                                <div class="case-slider-additional-info-left-column-orange">после</div>
-                                <div class="case-slider-additional-info-right-column">
-                                    <div class="characteristic-value-after" style="width: 452px">
-                                        <span class="characteristic-number-orange">300</span>
-                                    </div>
-                                </div>
-                            </li>
-                            <li class="case-slider-additional-info-characteristic before">
-                                <div class="case-slider-additional-info-left-column">до</div>
-                                <div class="case-slider-additional-info-right-column">
-                                    <div class="characteristic-value-before" style="width: 305px">
-                                        <span class="characteristic-number">200</span>
-                                    </div>
-                                </div>
-                            </li>
-                            <li class="case-slider-additional-info-characteristic after">
-                                <div class="case-slider-additional-info-left-column-orange">после</div>
-                                <div class="case-slider-additional-info-right-column">
-                                    <div class="characteristic-value-after" style="width: 360px">
-                                        <span class="characteristic-number-orange">250</span>
-                                    </div>
-                                </div>
-                            </li>
-                        </ul>
                     </div>
-                    <span class="case-slider-arrow _right"><img src="img/arrow-right.png" alt="arrow"></span>
+
+                    <span class="case-slider-arrow _right" data-modal="slide" data-target="next"><img src="img/arrow-right.png" alt="arrow"></span>
                 </div>
             </div>
         </div>
@@ -221,14 +355,37 @@
             <div class="general-info-reviews">
                 <h3 class="general-information-content-title">Отзывы клиентов</h3>
                 <div class="reviews-slider">
-                    <div class="reviews-slider-item">
-                        <img src="img/man.png" alt="general" class="general-information-slider-img">
-                        <div class="reviews-slider-text">
-                            <p class="reviews-slider-text-name">Алексей</p>
-                            <p class="reviews-slider-text-model">Audi TT N8</p>
-                            <p class="reviews-slider-slider-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-                                eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,</p>
+                    <div class="reviews-slider-content">
+                        <div class="reviews-slides">
+                            <div class="reviews-slider-item">
+                                <img src="img/man.png" alt="general" class="general-information-slider-img">
+                                <div class="reviews-slider-text">
+                                    <p class="reviews-slider-text-name">Алексей</p>
+                                    <p class="reviews-slider-text-model">Audi TT N8</p>
+                                    <p class="reviews-slider-slider-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                                        eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,</p>
+                                </div>
                         </div>
+                            <div class="reviews-slider-item">
+                                <img src="img/man.png" alt="general" class="general-information-slider-img">
+                                <div class="reviews-slider-text">
+                                    <p class="reviews-slider-text-name">Алексей</p>
+                                    <p class="reviews-slider-text-model">Audi TT N8</p>
+                                    <p class="reviews-slider-slider-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                                        eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,</p>
+                                </div>
+                            </div>
+                            <div class="reviews-slider-item">
+                                <img src="img/man.png" alt="general" class="general-information-slider-img">
+                                <div class="reviews-slider-text">
+                                    <p class="reviews-slider-text-name">Алексей</p>
+                                    <p class="reviews-slider-text-model">Audi TT N8</p>
+                                    <p class="reviews-slider-slider-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                                        eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,</p>
+                                </div>
+                            </div>
+                    </div>
+
                     </div>
                     <div class="reviews-slider-buttons">
                         <div class="reviews-slider-day">01</div>
@@ -237,8 +394,8 @@
 
                     </div>
                     <div class="reviews-slider-arrows">
-                        <img class="reviews-slider-arrow" src="img/left.png" alt="arrow">
-                        <img class="reviews-slider-arrow" src="img/right.png" alt="arrow">
+                        <img class="reviews-slider-arrow" src="img/left.png" alt="arrow"  data-modal="slide" data-target="next" />
+                        <img class="reviews-slider-arrow" src="img/right.png" alt="arrow"  data-modal="slide" data-target="next" />
                     </div>
                 </div>
             </div>
@@ -248,35 +405,131 @@
 <!--SECTION 4 END-->
 <!--SECTION 5 START-->
 <section class="cost" id="cost">
-    <div class="cost-content">
-        <div class="cost-column _left">
-            <div class="cost-column-img"></div>
-            <h3 class="cost-title">Рассчитайте стоимость чип-тюнинга</h3>
-            <img src="img/cost.png" alt="cost" class="cost-img">
-            <form class="cost-form">
-                <p class="cost-input-text">Ваше имя</p>
-                <input type="text" name="name">
-                <p class="cost-input-text">Email</p>
-                <input type="email" name="email">
-                <p class="cost-input-text">Номер телефона</p>
-                <input type="tel" name="phone">
-                <a href="#" class="cost-btn">далее</a>
-            </form>
-        </div>
-        <div class="cost-column _right">
-            <h3 class="cost-title">Расчитайте стоимость обслуживания</h3>
-            <img src="img/cost.png" alt="cost" class="cost-img">
-            <form class="cost-form">
-                <p class="cost-input-text">Ваше имя</p>
-                <input type="text" name="name">
-                <p class="cost-input-text">Email</p>
-                <input type="email" name="email">
-                <p class="cost-input-text">Номер телефона</p>
-                <input type="tel" name="phone">
-                <a href="#" class="cost-btn">далее</a>
-            </form>
+    <div class="container">
+        <div class="cost-content">
+            <div class="cost-column _left">
+                <h3 class="cost-title">Рассчитайте стоимость чип-тюнинга</h3>
+                <form class="cost-form">
+                    <div class="form-progress-bar">
+                        <span class="progress-bar-step active"></span>
+                        <span class="progress-bar-step"></span>
+                        <span class="progress-bar-step"></span>
+                    </div>
+
+                    <div class="form-step" data-step-number="1">
+                        <div class="form-group">
+                            <label class="label-text">Ваше имя</label>
+                            <input type="text" class="form-control text" name="name" required>
+                        </div>
+                        <div class="form-group">
+                            <label class="label-text">Email</label>
+                            <input type="email" class="form-control email" name="email" required>
+                        </div>
+                        <div class="form-group">
+                            <label class="label-text">Номер телефона</label>
+                            <input type="tel" class="form-control phone" name="phone" required>
+                            <a href="#" class="form-btn" data-modal="next">далее</a>
+                        </div>
+                    </div>
+
+                    <div class="form-step hide" data-step-number="2">
+                        <div class="form-group">
+                            <label class="label-text">Модель вашей машины</label>
+                            <div class="custom-select">
+<!--                                <select name="car-model" id="">-->
+<!--                                    <option value="audi-2016-2020">Audi (2016-2020)</option>-->
+<!--                                    <option value="audi-2011-2015">Audi (2016-2015)</option>-->
+<!--                                    <option value="audi-2006-2010">Audi (2006-2010)</option>-->
+<!--                                </select>-->
+                                <div class="custom-select-selected">Audi (2016-2020)</div>
+                                <div class="custom-select-items hide">
+                                    <div class="custom-select-option">Audi (2016-2020)</div>
+                                    <div class="custom-select-option">Audi (2016-2015)</div>
+                                    <div class="custom-select-option">Audi (2006-2010)</div>
+                                </div>
+                            </div>
+                            <a href="#" class="form-btn"  data-modal="next">рассчитать стоимость</a>
+                        </div>
+                    </div>
+
+                    <div class="form-step hide" data-step-number="3">
+                        <div class="success-message">
+                            <div class="success-message-icon">
+                                <span>
+                                    <img src="./img/success-message-icon.png" alt="">
+                                </span>
+                            </div>
+                            <p class="success-message-title">Спасибо!</p>
+                            <p class="success-message-text">С вами свяжутся в ближайшее время.</p>
+                        </div>
+                    </div>
+                </form>
+            </div>
+            <div class="cost-column _right">
+                <h3 class="cost-title">Расчитайте стоимость обслуживания</h3>
+                <form class="cost-form">
+                    <div class="form-progress-bar">
+                        <span class="progress-bar-step active"></span>
+                        <span class="progress-bar-step"></span>
+                        <span class="progress-bar-step"></span>
+                    </div>
+
+                    <div class="form-step" data-step-number="1">
+                        <div class="form-group">
+                            <label class="label-text">Ваше имя</label>
+                            <input type="text" class="form-control text" name="name" required>
+                        </div>
+                        <div class="form-group">
+                            <label class="label-text">Email</label>
+                            <input type="email" class="form-control email" name="email" required>
+                        </div>
+                        <div class="form-group">
+                            <label class="label-text">Номер телефона</label>
+                            <input type="tel" class="form-control phone" name="phone" required>
+                            <a href="#" class="form-btn"  data-modal="next">далее</a>
+                        </div>
+                    </div>
+
+                    <div class="form-step hide" data-step-number="2">
+                        <div class="form-group">
+                            <label class="label-text">Модель вашей машины</label>
+                            <div class="custom-select">
+                                <!--                                <select name="car-model" id="">-->
+                                <!--                                    <option value="audi-2016-2020">Audi (2016-2020)</option>-->
+                                <!--                                    <option value="audi-2011-2015">Audi (2016-2015)</option>-->
+                                <!--                                    <option value="audi-2006-2010">Audi (2006-2010)</option>-->
+                                <!--                                </select>-->
+                                <div class="custom-select-selected">Audi (2016-2020)</div>
+                                <div class="custom-select-items hide">
+                                    <div class="custom-select-option">Audi (2016-2020)</div>
+                                    <div class="custom-select-option">Audi (2016-2015)</div>
+                                    <div class="custom-select-option">Audi (2006-2010)</div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label class="label-text">Опишите вашу проблему</label>
+                            <textarea class="form-control-textarea" name="problem" row="5" required></textarea>
+                            <a href="#" class="form-btn" data-modal="next">рассчитать стоимость</a>
+                        </div>
+                    </div>
+
+                    <div class="form-step hide" data-step-number="3">
+                        <div class="success-message">
+                            <div class="success-message-icon">
+                                <span>
+                                    <img src="./img/success-message-icon.png" alt="">
+                                </span>
+                            </div>
+                            <p class="success-message-title">Спасибо!</p>
+                            <p class="success-message-text">С вами свяжутся в ближайшее время.</p>
+                        </div>
+                    </div>
+                </form>
+            </div>
         </div>
     </div>
+
 </section>
 <!--SECTION 5 END-->
 <!--SECTION 6 START-->
@@ -312,9 +565,9 @@
                 <h2 class="footer-title">Контактная информация</h2>
                 <div class="footer-contacts-content">
                     <div class="footer-contacts-links">
-                        <a class="footer-contacts-link">097 000 22 44</a>
-                        <a class="footer-contacts-link">073 500 00 00</a>
-                        <a class="footer-contacts-link">mail@gmail.com</a>
+                        <a href="tel:+380970002244" class="footer-contacts-link">097 000 22 44</a>
+                        <a href="tel:+380735000000" class="footer-contacts-link">073 500 00 00</a>
+                        <a href="mailto:mail@gmail.com" class="footer-contacts-link">mail@gmail.com</a>
                     </div>
                     <p class="footer-contacts-address">G. KIEV,<br/> STR. YAROSLAVIV VAL, 13-B, CORPUS 10/1</p>
                 </div>
@@ -322,13 +575,19 @@
             <div class="footer-column">
                 <h2 class="footer-title">Наши соцсети</h2>
                 <div class="footer-svg">
-                    <svg class="footer-svg-instagram"></svg>
-                    <svg class="footer-svg-facebook"></svg>
+                    <a href="#" target="_blank">
+                        <svg class="footer-svg-instagram"></svg>
+                    </a>
+                    <a href="#" target="_blank">
+                        <svg class="footer-svg-facebook"></svg>
+                    </a>
                 </div>
             </div>
         </div>
 </footer>
 <!--FOOTER END-->
-<script src="./js/script.js"></script>
+<script src="./js/slide-to.js"></script>
+<script src="./js/sliders.js"></script>
+<script src="./js/forms.js"></script>
 </body>
 </html>

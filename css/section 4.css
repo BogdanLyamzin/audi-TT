@@ -43,7 +43,9 @@
 .case-slider-arrow {
     top: 155px;
     position: absolute;
+    cursor: pointer;
 }
+
 .case-slider-arrow._left{
     left: -40px;
 }
@@ -51,8 +53,20 @@
     right: -40px;
 }
 
+.case-slider-content {
+    overflow: hidden;
+    width: 541px;
+}
+
+.case-slides {
+    width: 300%;
+    transition: transform 0.8s ease;
+    display: flex;
+}
+
 .case-slider-item {
-position: relative;
+    flex: 0 0 541px;
+    position: relative;
 }
 
 .case-slider-text {
@@ -187,7 +201,18 @@ position: relative;
     top: 0;
     right: 47px;
 }
+.reviews-slider-content {
+    width: 500px;
+    overflow: hidden;
+}
+.reviews-slides {
+    width: 300%;
+    transition: transform 0.8s ease;
+    display: flex;
+}
+
 .reviews-slider-item {
+    flex: 0 0 500px;
     display: grid;
     grid-template-columns: 39% 61%;
 }
@@ -259,9 +284,11 @@ position: relative;
     position: absolute;
     top: 75px;
     right: 0;
+    z-index: 10;
 }
 .reviews-slider-arrow{
     margin-right: 5px;
+    cursor: pointer;
 }
 
 /*SECTION 4 END*/

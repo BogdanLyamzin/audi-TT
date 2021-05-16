@@ -1,0 +1,48 @@
+.cost {
+    background: url('../img/cost-bg.png') no-repeat left top, #000;
+    background-size: 50% 100%;
+    padding: 167px 0 277px;
+    position: relative;
+}
+.cost::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 50vw;
+    height: 100%;
+    background: rgba(0,0,0,0.8);
+}
+.cost-content{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}
+
+.cost-title{
+    font-family: "Gotham Pro", sans-serif;
+    font-size: 36px;
+    line-height: 43px;
+    color: #fff;
+    text-align: center;
+    position: relative;
+    max-width: 435px;
+    margin-bottom: 46px;
+}
+
+.cost-title::after{
+    content: "";
+    height: 3px;
+    background-color: #fff;
+    position: absolute;
+    width: 93px;
+    left: 50%;
+    transform: translateX(-50%);
+    bottom: -14px;
+}
+
+.cost-form{
+
+}
+
+
+
