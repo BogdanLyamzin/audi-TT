@@ -1,8 +1,9 @@
 .cost {
     background: url('../img/cost-bg.png') no-repeat left top, #000;
     background-size: 50% 100%;
-    padding: 167px 0 277px;
+    padding-top: 167px;
     position: relative;
+    min-height: 905px;
 }
 .cost::before {
     content: "";
@@ -16,6 +17,10 @@
 .cost-content{
     display: grid;
     grid-template-columns: repeat(2, 1fr);
+}
+
+.cost-column._right {
+    padding-left: 129px;
 }
 
 .cost-title{

@@ -1,9 +1,10 @@
 /*HEADER START*/
 .header{
     padding-top: 315px;
-    padding-bottom: 200px;
     background: url("../img/header-bg.png") center/cover no-repeat;
     background-attachment: fixed;
+    min-height: 100vh;
+    box-sizing: border-box;
 }
 
 .header-title{

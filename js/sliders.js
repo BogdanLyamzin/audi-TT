@@ -47,7 +47,6 @@ reviewsSliderArrow.forEach(arrow => arrow.addEventListener("click", function (e)
     const {target} = this.dataset;
     const translateStep = (target === "next") ? -500 : 500;
     const currentTransform = getTranslateX(reviewsSlidesContainer);
-    console.log(currentTransform)
     if(!currentTransform && target === "prev") {
         return reviewsSlidesContainer.style.transform = `translate(${-reviewsSlidesContainer.offsetWidth + translateStep}px)`;
     }
@@ -55,7 +54,27 @@ reviewsSliderArrow.forEach(arrow => arrow.addEventListener("click", function (e)
     if((currentTransform + translateStep) < -(reviewsSlidesContainer.offsetWidth - 500)){
         return reviewsSlidesContainer.style.transform = `translate(0px)`;;
     }
-
+    const steps = reviewsSlidesContainer.children.length;
+    const currentStep = this.closest(".reviews-slider").querySelector(".reviews-slider-day");
+    const currentStepNumber = +currentStep.textContent;
+    if(target === "next"){
+        console.log(currentStep)
+        if(currentStepNumber < 3) {
+            currentStep.textContent = `0${currentStepNumber + 1}`;
+        }
+        else {
+            console.log(currentStep)
+            currentStep.textContent = `01`;
+        }
+    }
+    if(target === "prev") {
+        if(currentStepNumber > 0) {
+            currentStep.textContent = `0${currentStepNumber - 1}`;
+        }
+        else {
+            currentStep.textContent = `01`;
+        }
+    }
     reviewsSlidesContainer.style.transform = `translate(${currentTransform + translateStep}px)`;
 }))
 
