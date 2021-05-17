@@ -13,14 +13,12 @@
 }
 .tuning-column {
     text-align: center;
+    display: flex;
+    justify-content: center;
 }
 
-.tuning-column._left {
-    padding-right: 166px;
-}
-
-.tuning-column._right {
-    padding-left: 123px;
+.chip-tuning-content {
+    flex: 0 0 435px;
 }
 
 .tuning-column-title {
@@ -76,6 +74,10 @@
     font-weight: 300;
     line-height: 20px;
     text-align: left;
+}
+
+.tuning-services {
+    flex: 0 0 475px;
 }
 
 .tuning-slider {

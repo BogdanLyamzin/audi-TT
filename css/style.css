@@ -1,31 +1,24 @@
 @import "reset.css";
 @import "fonts.css";
+
+@import "common.css";
+
+@import "form.css";
+
 @import "navbar.css";
 @import "header.css";
+
 @import "section-tuning.css";
 @import "section-why-us.css";
-@import "section-faq.css";
-@import "section 4.css";
+@import "section-questions.css";
+@import "general-info.css";
 @import "cost.css";
-@import "form.css";
-@import "section-6.css";
-@import "section-7.css";
+@import "section-map.css";
+@import "section-join-us.css";
+
 @import "footer.css";
 
-.container{
-    max-width: 1200px;
-    margin: 0 auto;
-    position: relative;
-}
 
-img {
-    max-width: 100%;
-    height: auto;
-}
-
-.hide {
-    display: none;
-}
 
 
 

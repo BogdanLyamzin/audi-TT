@@ -22,19 +22,14 @@
 
 .map-title {
     font-family: "Gotham Pro", sans-serif;
-    font-style: normal;
-    font-weight: normal;
     font-size: 36px;
-    line-height: 43px;
     color: #fff;
     margin-bottom: 28px;
 }
 
 .map-text {
     font-family: "Gotham Pro", sans-serif;
-    font-style: normal;
     font-weight: 500;
     font-size: 16px;
-    line-height: 15px;
     color: #fff;
 }

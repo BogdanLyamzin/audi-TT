@@ -8,11 +8,6 @@ elements.forEach(elem => elem.addEventListener("click", function(e){
     const {top} = element.getBoundingClientRect();
 
     animate(document.scrollingElement || document.documentElement, "scrollTop", "", 0, (top - 100), speed, true);
-    // const {top} = element.getBoundingClientRect();
-    // window.scrollTo({
-    //     top,
-    //     behavior: "smooth"
-    // });
 }))
 
 function animate(elem, style, unit, from, to, time, prop) {

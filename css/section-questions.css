@@ -18,16 +18,12 @@
 }
 
 .questions-content {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
+    display: flex;
+    justify-content: space-around;
 }
 
-.questions-column._left {
-    padding-right: 143px;
-}
-
-.questions-column._right {
-    padding-left: 143px;
+.questions-column {
+    flex: 0 0 435px;
 }
 
 .questions-item {
