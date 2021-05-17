@@ -19,6 +19,16 @@
     grid-template-columns: repeat(2, 1fr);
 }
 
+.cost-column {
+    z-index: 2;
+    display: flex;
+}
+
+.cost-column._left {
+    justify-content: flex-end;
+    padding-right: 129px;
+}
+
 .cost-column._right {
     padding-left: 129px;
 }

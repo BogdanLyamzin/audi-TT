@@ -60,7 +60,7 @@
 
 .case-slides {
     width: 300%;
-    transition: transform 0.8s ease;
+    transition: transform 0.6s ease;
     display: flex;
 }
 
@@ -207,7 +207,7 @@
 }
 .reviews-slides {
     width: 300%;
-    transition: transform 0.8s ease;
+    transition: transform 0.6s ease;
     display: flex;
 }
 
