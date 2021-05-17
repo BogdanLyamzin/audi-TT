@@ -4,7 +4,10 @@ elements.forEach(elem => elem.addEventListener("click", function(e){
    e.preventDefault();
     const {target, speed} = this.dataset;
     const element = document.querySelector(target);
-    animate(document.scrollingElement || document.documentElement, "scrollTop", "", 0, (element.offsetTop - 100), speed, true);
+
+    const {top} = element.getBoundingClientRect();
+
+    animate(document.scrollingElement || document.documentElement, "scrollTop", "", 0, (top - 100), speed, true);
     // const {top} = element.getBoundingClientRect();
     // window.scrollTo({
     //     top,
