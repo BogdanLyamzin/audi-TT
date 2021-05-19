@@ -1,6 +1,6 @@
 /*SECTION WHY-US START*/
 
-.why-us{
+.why-us {
     position: absolute;
     bottom: 131px;
     left: 50%;
@@ -9,11 +9,11 @@
     width: 1218px;
     box-sizing: border-box;
     background-color: #000;
-    box-shadow: 0 0 48px rgba(184,0,0,0.8);
+    box-shadow: 0 0 48px rgba(184, 0, 0, 0.8);
     padding: 34px 100px 36px;
 }
 
-.why-us-title{
+.why-us-title {
     font-family: "Gotham Pro", sans-serif;
     font-weight: 500;
     font-size: 36px;
@@ -21,20 +21,20 @@
     margin-bottom: 46px;
 }
 
-.our-preference{
+.our-preference {
     display: flex;
     justify-content: space-around;
 }
 
-.our-preference-item{
+.our-preference-item {
     text-align: center;
 }
 
-.our-preference-img-container{
+.our-preference-img-container {
     margin-bottom: 36px;
 }
 
-.our-preference-text{
+.our-preference-text {
     font-family: "Gotham Pro", sans-serif;
     font-weight: 300;
     font-size: 17px;
@@ -45,3 +45,48 @@
 }
 
 /*SECTION WHY-US END*/
+
+@media (max-width: 992px){
+    .why-us {
+        max-width: 80%;
+        text-align: center;
+
+    }
+    .why-us-title{
+        font-weight: 500;
+        font-size: 25px;
+        margin-bottom: 38px;
+    }
+    .our-preference{
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: 49px;
+    }
+}
+@media (max-width: 480px){
+    .why-us {
+        max-width: 90%;
+        text-align: center;
+        padding: 0;
+        
+    }
+    .why-us-title{
+        font-weight: 500;
+        font-size: 17px;
+        margin-bottom: 22px;
+    }
+    .our-preference{
+        display: grid;
+        justify-content: space-between;
+        grid-template-columns: 25% 25% 25%;
+        margin: 10px 22px 30px 22px;
+    }
+    .our-preference-img-container{
+        margin-bottom: 10px;
+    }
+    .our-preference-text{
+    font-size: 12px;
+    }
+}
+
+

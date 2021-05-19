@@ -60,3 +60,19 @@
     background-image: url("../img/join3.png");
 }
 
+@media (max-width: 992px) {
+    .join-column-call{
+        display: none;
+    }
+
+    .join-column-gallery{
+        display: grid;
+        width: 100vw;
+    }
+}
+
+@media (max-width: 480px) {
+    .join-column-gallery{
+        width: 100vw;
+    }
+}

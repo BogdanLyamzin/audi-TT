@@ -30,7 +30,7 @@
     margin-bottom: 139px;
 }
 
-.questions-item-title{
+.questions-item-title {
     font-family: "Gotham Pro", sans-serif;
     font-weight: 500;
     font-size: 25px;
@@ -40,7 +40,7 @@
     display: inline-block;
 }
 
-.questions-item-title::after{
+.questions-item-title::after {
     content: "";
     height: 4px;
     bottom: -13px;
@@ -50,7 +50,7 @@
     left: 0;
 }
 
-.questions-item-text{
+.questions-item-text {
     font-family: "Gotham Pro", sans-serif;
     font-weight: 300;
     font-size: 17px;
@@ -59,3 +59,50 @@
 }
 
 /*SECTION 3 END*/
+@media (max-width: 992px) {
+    .questions-title {
+        font-size: 35px;
+    }
+
+    .questions-item-title {
+        font-weight: 500;
+        font-size: 19px;
+    }
+
+    .questions-item-text {
+        font-weight: 300;
+        font-size: 12px;
+        line-height: 15px;
+    }
+    .questions-column{
+        max-width: 35%;
+    }
+}
+
+@media (max-width: 480px) {
+    .questions{
+        padding: 0;
+        background-size: auto;
+    }
+    .questions-content{
+        display: grid;
+        grid-template-columns: 1fr;
+        margin-left: 33px;
+    }
+    .questions-column{
+        flex: 0;
+        max-width: 100%;
+    }
+    .questions-item{
+        margin-bottom: 100px;
+    }
+    .questions-item-title{
+        font-weight: 500;
+        font-size: 25px;
+    }
+    .questions-item-text{
+        font-weight: 300;
+        font-size: 17px;
+        line-height: 25px;
+    }
+}
